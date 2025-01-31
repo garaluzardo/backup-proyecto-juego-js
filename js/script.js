@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     backgroundMusic.play();
 
     // Inicialmente, solo mostrar #start-screen
-    startScreen.style.display = "block";
+    startScreen.style.display = "flex";
     wrapper.style.display = "none";
     gameOverScreen.style.display = "none";
     fakeScreen.style.display = "none";
