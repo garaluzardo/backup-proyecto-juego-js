@@ -1,0 +1,11 @@
+Errores a solventar:
+
+1) cuando cargo el documento el div menu se descentra, pero cuando vuelvo
+a la pantalla inicial con un evento desde gameover o singleplayer aparece correcta
+
+2) no se actualiza en el mensaje de gameover las puntuaciones de los jugadores, por eso comenté el <p> en el index.html
+
+3) backgroundMusic solo se inicia después de haber hecho click en singleplayer y volver desde ahí, debería iniciarse con autoplay
+o con la primera interacción del usuario si es el navegador el que está bloqueando el autoplay.
+
+4) el temporizador del multijugador se inicia con el click del modo, no debería iniciarse hasta que no se toque alguna tecla de dirección.
