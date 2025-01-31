@@ -81,15 +81,18 @@ let countdownTime = 120; // Inicializamos el temporizador
 
 // Eventos 
 document.addEventListener("DOMContentLoaded", () => {
+    
+    // Loop musical de fondo
+    backgroundMusic.loop = true;
+    backgroundMusic.play();
+
     // Inicialmente, solo mostrar #start-screen
     startScreen.style.display = "block";
     wrapper.style.display = "none";
     gameOverScreen.style.display = "none";
     fakeScreen.style.display = "none";
 
-    // Loop musical de fondo
-    backgroundMusic.loop = true; 
-    backgroundMusic.play();
+    
 
     // Movimiento serpientes
     document.addEventListener("keydown", changeDirection);
@@ -122,9 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
         wrapper.style.display = "flex";
         gameOverScreen.style.display = "none";
         fakeScreen.style.display = "none";
-       
+
         countdownTime = 120;
-        updateTimer(); 
+        updateTimer();
 
         // Limpiar intervalos previos
         if (gameLoopIntervalId) {
